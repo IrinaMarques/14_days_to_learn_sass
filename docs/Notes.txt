@@ -1,0 +1,20 @@
+========================
+What Are Preprocessors?
+========================
+
+A program that takes a type of data and transforms into another type of data.
+
+In sass: the program takes sass code and process into css code.
+
+They have some extra features that makes the job goes faster.
+
+First wrote the sass code --> then compile into css --> then load css into the page.
+
+====================
+The Course Structure
+====================
+
+==================================
+Install Method 1: The Command Line
+==================================
+
