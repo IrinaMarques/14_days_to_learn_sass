@@ -18,3 +18,6 @@ The Course Structure
 Install Method 1: The Command Line
 ==================================
 
+==============================================
+Install Method 2: Dedicated Apps and Services
+==============================================
