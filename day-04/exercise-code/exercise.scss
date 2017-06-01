@@ -1,0 +1,79 @@
+/* Day 4 Exercise
+ *
+ * This is an SCSS file.
+ *
+ * Your assignment is to use variables wherever you see fit to make this code
+ * easier to maintain.
+ *
+ * In the end, compare it with the result from the /exercise-answer folder.
+ * Good luck! */
+
+//Variables 
+$body-typeface: Arial, sans-serif;
+$special-typeface: serif;
+
+$base-line-height: 1.5;
+$base-font-size: 1em;
+$baseline: $base-font-size * $base-line-height; // 1 * 1.5 = 1.5
+
+$accent-color: #CD746A;
+$color: #333;
+
+$fixed-layout-width: 960px;
+$fluid-layout-width: 85%;
+
+
+$baseline: $base-font-size * $base-line-height;
+
+body {
+    font-family: $text-font-family; /**/
+    font-size:  $base-font-size;
+    line-height:  $base-line-height;
+}
+
+p {
+    margin-bottom: $baseline;
+
+    a {
+        text-decoration: none;
+        color: $accent-color;
+
+        &:hover {
+            color: #fff;
+            background-color: $color;
+        }
+    }
+}
+
+blockquote {
+    font-family: $special-typeface;
+    font-size: 150%;
+    font-style: italic;
+    padding: $baseline * 2 $baseline; //1.5 * 2 1.5 = 3 1.5
+    margin: $baseline * 2; //1.5 * 2 = 3
+
+    cite {
+        a {
+            color: $color;
+
+            &:hover {
+                color: $accent-color;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+        }
+
+        &:before {
+            content: "- ";
+        }
+    }
+}
+
+.container {
+    width: $fixed-layout-width;
+    margin: 0 auto;
+
+    .fluid-layout & {
+        width: $fluid-layout-width;
+    }
+}

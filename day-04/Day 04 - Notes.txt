@@ -1,0 +1,40 @@
+=============
+4. Variables
+=============
+
+Entities that can hold a certain value and can be reused throughout the code.
+
+4.1 Repeating values:
+Can be used to values that repeat themselves.
+
+i.e.
+p > a { color: #333; }
+li > a { color: #333; }
+
+Declare a variable in the top of the document:
+Start with a dollar sign - $
+$text-color: #333;
+
+p > a { color: $text-color; }
+li > a { color: $text-color; }
+
+If we need to change a value it will automatically changes in all places
+
+4.2 Defining a font family
+$text-font-family: Helvetica, Arial, sans-serif;
+
+in the document:
+font-family: $text-font-family;
+
+4.3 Do increments
+We can do operations with the variables
+
+i.e
+$baseline: 1.5em;
+
+padding: $baseline * 2
+
+4.4 Global Flag
+Variable scope: variables are only available inside the selector that are defined
+
+
