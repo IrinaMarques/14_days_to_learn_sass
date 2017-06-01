@@ -1,0 +1,25 @@
+==============
+Day 1: Syntax
+==============
+
+This language as two syntaxes
+scss (new)
+sass (older)
+
+Diferences:
+
+sass is an extension of css but we can do more:
+- variables
+- nesting 
+- operations
+
+sass:
+- uses indentation instead {}
+- instead of ; uses new lines
+
+How you write comments:
+/*css*/
+Use multiline comment
+//scss
+//sass
+Everything under is multiline comment

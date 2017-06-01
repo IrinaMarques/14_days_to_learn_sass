@@ -1,0 +1,22 @@
+========================
+Day 3: Nested Properties
+========================
+
+3.1 Use start names to group properties:
+font-family:
+font-size:
+font-weight
+
+Can be display like:
+font: {
+family:
+size:
+weight: 
+}
+
+Same result for:
+padding
+margin
+background
+
+This can generate more code than usual

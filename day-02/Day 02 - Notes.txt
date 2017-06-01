@@ -1,0 +1,15 @@
+===============
+Day 2: Nesting
+===============
+
+A selector inside another selector.
+
+3 or 4 levels it's good for nesting, not more.
+
+Nesting it's best for pseudo-classes and pseudo-elements.
+
+Nesting and the parent selector (&) they can be great when our styling the uper context. 
+
+When we usiging the selector we must be carefull about creating files that can not be search propertly.
+
+https://webdesign.tutsplus.com/courses/14-days-to-learn-sass/lessons/day-2-nesting
