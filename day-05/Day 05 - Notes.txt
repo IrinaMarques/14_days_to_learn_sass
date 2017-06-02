@@ -1,0 +1,27 @@
+=================
+5. Interpolation
+=================
+
+Variables can be used in selectors and property names but it's needed to use a special syntax - interpolation.
+
+For words we use interpolation.
+
+$child: "widget";
+
+.sidebar-#{$child} {
+    padding: $baseline;
+}
+
+To make :
+.sidebar-widget
+Because we can't use the -$, it's not valid. We have to use -#{}
+
+In the case of the short hand:
+font: 400 $base-font-size/$line-height $text-font-family;
+The / will act like a division sign.
+
+So:
+font: 400 #{$base-font-size}/#{$line-height} $text-font-family;
+
+$cite-before: "Author: ";
+content: "- #{$cite-before}";

@@ -1,0 +1,26 @@
+$base-font-family: Helvetica, Arial, sans-serif;
+$font-size: 1em;
+$font-heigh: 1.5;
+
+$btn-primary: "primary";
+$btn-default: "default";
+$btn-font-color: #fff;
+
+body {
+    font: #{$font-size}/#{$font-heigh} $base-font-family;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5em 1em;
+
+    &-#{$btn-default} {
+    	background-color: #89C3AB;
+    	color: $btn-font-color;
+    }
+
+    &-#{$btn-default} {
+    	background-color: #686868;
+    	color: $btn-font-color;
+    }
+}
