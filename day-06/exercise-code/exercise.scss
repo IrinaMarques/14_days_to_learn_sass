@@ -1,0 +1,38 @@
+/* Day 6 Exercise
+ *
+ * Create an .scss file that allows you to change the typography theme of a page
+ * by adding the class of .theme-sans or .theme-serif to the <body> tag.
+ *
+ * The two themes should be easily changeable. The output should be similar to the one below.
+ *
+ * body.theme-sans {
+ *     font: 1.125em/1.5 Arial, sans-serif;
+ * }
+ * body.theme-serif {
+ *     font: 1.5em/1.4 Georgia, serif;
+ * }
+ *
+ * In the end, compare it with the result from the /exercise-answer folder.
+ * Good luck! */
+
+$theme-sans (
+	size: 1.125em,
+	height:1.5,
+	family: (Arial, sans-serif)
+);
+
+$theme-serif (
+	size: 1.5em,
+	height:1.4,
+	family: (Georgia, serif)
+);
+
+ body {
+	
+	&.theme-sans {
+		font:#{map-get($theme-sans,size)}/#{map-get($theme-sans, height)} map-get($theme-sans, family);
+	}
+
+	&.theme-serif
+	font: #{map-get($theme-serif, size)}/#{map-get($theme-serif, height)} map-get($theme-serif, family);
+ }

@@ -1,0 +1,24 @@
+==============
+6. Data Types
+==============
+
+7 Main data types supported by Sass:
+- Numbers 
+- Strings of text
+- colors
+- Booleans
+- nulls
+- Lists
+- Maps
+
+Interpolation unquoted quoted strings.
+
+List of values - colors that sass supports
+https://github.com/sass/sass/blob/stable/lib/sass/script/value/color.rb
+
+Maps are list represented by key value pairs. Cannot be converted to plain CSS.
+
+To use the maps we have to use a fucntion named map-get
+
+map-get($key, value)
+#{map-get($key, value)

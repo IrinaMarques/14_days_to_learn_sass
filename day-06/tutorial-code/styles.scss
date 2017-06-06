@@ -1,0 +1,87 @@
+/* Day 6 - Data types */
+
+// Numbers
+body {
+    margin: 100px; // numbers with units
+    line-height: 1.5; // decimal numbers without units
+    font-weight: 800; // whole numbers without units
+    padding: 1%; // percentages
+}
+
+
+
+// Strings
+.container {
+    font-family: "Helvetica", Arial, sans-serif; // quoted and unquoted strings
+    font-weight: bold; //unquoted
+
+    &:before {
+        content: "This is a pseudo-element"; // quoted
+    }
+}
+
+$string: "element";
+
+.parent-#{$string} {
+    padding: 1em;
+}
+
+// when we are using interpolation quoted strings are unquoted
+
+
+// Colors
+.btn {
+    color: #cccccc; //hex code
+    background-color: rgb(255, 255, 255); //rgb function
+    border-color: rgba(0, 0, 0, .5); //rgb function with alpha
+    border-top-color: hsl(155, 33%, 65%); //hsl - hue, saturation and lightness
+    border-bottom-color: blue; //color
+}
+
+
+
+// Lists - series of values
+.sidebar {
+    padding: 3em; //list with one item
+    margin: 1em 2em 3em 4em; //list with four items
+    font-family: Helvetica, Arial, sans-serif; //list with three items separated by commas
+    box-shadow: 0 0 3px #999, 10px 10px 20px #555; // lists that contain other lists
+}
+
+body.serif {
+    font: 400 15px/1.5 Georgia, serif; // list that combines spaces with commas
+}
+
+
+
+// Maps
+$colors: ( //declare like a variable with a $ and parenthesis 
+    1: #89C3AB,  // key value pairs - one key 1 (any data type) and then a value separate pairs with commas
+    2: #636363 // last value don't need a comma
+);
+
+$additional-colors: ( 
+    'color-1': red,
+    'color-2': blue
+);
+
+$margins: (
+    tight: 10px 20px,
+    compact: 30px,
+    large: 5em
+);
+
+// If the inner lists have the same separator as the outer list, use parantheses
+$fonts: (
+    option-1: (Arial, sans-serif), //because we have commas we need to use parenthesis
+    option-2: (Helvetica, sans-serif)
+);
+
+// To use the maps we have to use a fucntion named map-get
+footer {
+    background-color: map-get($colors, 1); //map-get($map, key)
+    border-color: map-get($additional-colors, 'color-2'); //use quotes if have quotes
+    margin: map-get($margins, compact);
+    padding: map-get($margins, tight);
+    font-family: map-get($fonts, option-1);
+}
