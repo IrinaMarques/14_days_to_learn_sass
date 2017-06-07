@@ -1,0 +1,36 @@
+$settings (
+	body-font: 1em,
+	body-height: 1.5,
+	body-family: Helvetica,
+	body-fallback-font: (Arial, sans-serif),
+	body-lg-txt-multiplier: 2,
+	body-sm-txt-multiplier: .75,
+	txt-color: #999,
+	cite-before: "- "
+	);
+
+$baseline: map-get($settings, body-font) * map-get($settings, body-height);
+
+body {
+	font: #{map-get($settings, body-font)/#{map-get($settings, body-height) map-get ($settings, body-family) + "," + map-get($settings, body-fallback-font);
+	color: map-get($settings, txt-color);
+}
+
+.large-text {
+	font-size: 100% * map-get($settings, body-lg-txt-multiplier);
+}
+
+.small-text {
+	font-size: 100% * map-get($settings, body-sm-txt-multiplier);
+}
+
+blockquote {
+	padding: $baseline;
+	margin: $baseline * $baseline;
+
+	cite {
+		&before {
+			content: map-get($settings, cite-before);
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* Day 7 - Operations */
+
+// Number operations
+body {
+    margin: 10px + 20px; //30px - same units
+    padding: 20px * 2; //40px
+    font-size: 39px - 10px; //29px
+}
+
+.container {
+    font: 20px/1.5; //don't do division
+
+    $baseline: 2em;
+
+    margin-bottom: $baseline / 2; //work the division
+    margin-top: (2em / 2); //work the division
+
+    padding: 10px + 20px / 2; //multiple operators
+
+    &:after {
+        content: 10px > 20px; //false
+    }
+
+    margin-right: 1px + 3px * 3; // 3*3+1
+    margin-left: (1px + 3px) * 3; //1+3*3parenthesis change te order of the operation
+}
+
+
+
+// String operations
+.button {
+    font-family: sans + "-serif"; //sans-serif
+    font-family: "sans" + -serif; //"sans-serif"
+
+    &:before {
+        content: "Click" + "Me"; //"ClickMe"
+    }
+
+    &:after {
+        $content: "default";
+
+        content: "This is a #{$content} button with a width of #{5 * 23}px."; //Interpolation, and give us the result of the operation
+    }
+}

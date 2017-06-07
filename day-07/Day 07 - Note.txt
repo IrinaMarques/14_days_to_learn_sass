@@ -1,0 +1,17 @@
+=============
+7. Operators
+=============
+
+Sass supports operations with:
+- numbers
+- colors
+- strings
+- booleans
+- lists
+
+Should use the same unit
+
+Strings Operations:
+- The most common thing is to concatenate strings
+- When we are working with quoted strings  the ones that are in the left of the plus sign dictate the outcome
+- interpolation unquotes a string
