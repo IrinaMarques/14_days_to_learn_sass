@@ -1,0 +1,8 @@
+Partial files
+
+They are not beeing compile into css but they can be imported like other sass or scss file. 
+
+We cannot include a partial and a non partial file with the same name in the same directory.
+i.e: 
+_layout.scss
+layout.scss 
