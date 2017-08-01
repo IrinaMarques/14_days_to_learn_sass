@@ -1,0 +1,11 @@
+Sass look for other sass files in the current directory.
+
+We can import multiple files in the same import using commas. 
+But pay attention to the order.
+i.e. @import "general/general", "layout";
+
+It's possible to import:
+.css
+url
+media queries
+http/https
